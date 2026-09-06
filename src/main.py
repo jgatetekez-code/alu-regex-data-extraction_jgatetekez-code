@@ -49,4 +49,13 @@ urls = re.findall(
 
 print(urls)
 
+# Extract phone numbers
+phone_numbers = re.findall(
+    r"(?:\+250[\s-]?\d{3}[\s-]?\d{3}[\s-]?\d{3}"
+    r"|\(250\)[\s-]?\d{3}[\s-]?\d{3}[\s-]?\d{3})",
+    text,
+)
+
+print(phone_numbers)
+
             
