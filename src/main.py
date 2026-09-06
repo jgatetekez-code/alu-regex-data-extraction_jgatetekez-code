@@ -22,5 +22,14 @@ for email in emails:
 
 print(valid_emails)
 
+# Extract credit card numbers
+
+credit_cards = re.findall(
+    r"\b(?:\d{4}[- ]?){3}\d{4}\b",
+    text,
+)
+
+print(credit_cards)
+
 
             
