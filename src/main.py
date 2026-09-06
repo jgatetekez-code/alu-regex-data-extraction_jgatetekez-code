@@ -40,6 +40,13 @@ for card in credit_cards:
 
 print(masked_credit_cards)
 
+# Extract URLs
 
+urls = re.findall(
+    r"https?://[a-zA-Z0-9.-]+(?:/[a-zA-Z0-9._~:/?#\[\]@!$&'()*+,;=-]*)?",
+    text,
+)
+
+print(urls)
 
             
