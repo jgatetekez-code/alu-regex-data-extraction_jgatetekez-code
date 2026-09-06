@@ -29,7 +29,17 @@ credit_cards = re.findall(
     text,
 )
 
-print(credit_cards)
+# Mask credit card numbers for security
+
+masked_credit_cards = []
+
+for card in credit_cards:
+    digits = card.replace(" ", "").replace("-", "")
+    masked_card = "*" * 12 + digits[-4:]
+    masked_credit_cards.append(masked_card)
+
+print(masked_credit_cards)
+
 
 
             
