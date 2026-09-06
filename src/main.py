@@ -1,4 +1,5 @@
 import re
+import json
 
 with open("input/raw-text.txt", "r") as file:
 
@@ -57,5 +58,39 @@ phone_numbers = re.findall(
 )
 
 print(phone_numbers)
+
+# Security validation
+safe_emails = []
+
+for email in valid_emails:
+    if len(email) <= 100 and " " not in email:
+        safe_emails.append(email)
+
+safe_urls = []
+
+for url in urls:
+    if len(url) <= 200 and " " not in url:
+        safe_urls.append(url)
+
+safe_phone_numbers = []
+
+for phone in phone_numbers:
+    if len(phone) <= 20:
+        safe_phone_numbers.append(phone)
+
+# Create structured output
+results = {
+    "emails": emails,
+    "alu_emails": safe_emails,
+    "credit_cards": masked_credit_cards,
+   "urls": safe_urls,
+    "phone_numbers": safe_phone_numbers,
+}
+
+# Save results as JSON
+with open("output/sample-output.json", "w") as file:
+    json.dump(results, file, indent=4)
+
+print("Results saved to output/sample-output.json")
 
             

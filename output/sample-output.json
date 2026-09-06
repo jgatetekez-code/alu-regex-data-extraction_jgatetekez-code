@@ -1,0 +1,28 @@
+{
+    "emails": [
+        "sarah.mukamana@example.com",
+        "jean.mugisha@alueducation.com",
+        "clara.niyonsenga@alumni.alueducation.com",
+        "eric.hakizimana@si.alueducation.com"
+    ],
+    "alu_emails": [
+        "jean.mugisha@alueducation.com",
+        "clara.niyonsenga@alumni.alueducation.com",
+        "eric.hakizimana@si.alueducation.com"
+    ],
+    "credit_cards": [
+        "************1111"
+    ],
+    "urls": [
+        "https://www.example.com/orders/4521",
+        "https://portal.alueducation.com/login",
+        "https://alumni.alueducation.com/events",
+        "https://support.example.org/contact"
+    ],
+    "phone_numbers": [
+        "+250 788 123 456",
+        "+250 781 654 321",
+        "+250-723-456-789",
+        "(250) 788-987-654"
+    ]
+}
